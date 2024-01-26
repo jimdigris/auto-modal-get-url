@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Модальное окно на Flexbox</title>
+    <link rel="stylesheet" href="style.css?6">
+</head>
+
+<body>
+
+    <label for="modal-oa__input-2" class="modal-oa__label-button">Кнопка 2</label>
+
+
+    <div class="modal-oa">
+        <input type="checkbox" class="modal-oa__input" id="modal-oa__input-2" />
+        <div class="modal-oa__body modal-oa__body-parent">
+            <div class="modal-oa__body modal-oa__body-child">
+                <div class="modal-oa__head">
+                    <div class="modal-oa__title">Заголовок окна</div>
+                    <label for="modal-oa__input-2" class="modal-oa__close-in"><img src="icons-modal-close.svg" alt="icon-close"></label>
+                </div>
+                <div class="modal-oa__content">Не следует, однако, забывать, что постоянное информационно-пропогандистское обеспечение нашей деятельности в значительной степени обуславливает создание прогресса профессионального общества. Для современного мира курс на социально-ориентированный национальный проект проверки
+                    влечёт за собой интересный процесс внедрения модернизации новых предложений.
+                </div>
+
+                <form class="modal-oa__form" enctype="multipart/form-data" method="post" onsubmit="send(event, '/assets/templates/v3/akb/assets/mail/send.php', 'order-product-info')">
+                    <input type="hidden" name="titleModal" value="Заказ товара">
+                    <input type="hidden" name="linkPage" value="[[++site_url]]/[[*uri]]">
+                    <input type="hidden" name="titlePage" value="[[*pagetitle]]">
+                    <input type="hidden" name="keyL" value="s">
+                    <input type="hidden" name="keyP" value="d">
+
+                    <input class="modal-oa__form-input" type="text" name="name" placeholder="Ваше имя">
+                    <input class="modal-oa__form-input" type="tel" name="phone" placeholder="Телефон">
+                    <input class="modal-oa__form-input" type="email" name="email" placeholder="Ваш email">
+                    <textarea class="modal-oa__form-input" name="text" placeholder="Сообщение"></textarea>
+
+                    <div class="modal-oa__form-info order-product-info"></div>
+
+                    <fieldset class="modal-oa__form-buttons">
+                        <button type="submit" class="modal-oa__form-send" onclick="ym(50111713,'reachGoal','2023_btn_send'); return true;">Отправить</button>
+                    </fieldset>
+
+                    <fieldset class="modal-oa__form-policy">
+                        <input id="modal-oa-chek-order-product" type="checkbox" name="policy" checked="checked" required>
+                        <label class="modal-oa__form-chek-policy" for="modal-oa-chek-order-product"></label>
+                        <label class="modal-oa__form-label-policy" for="modal-oa-chek-order-product"> Я согласен на обработку моих персональных данных *</label>
+                    </fieldset>
+                </form>
+
+                <div class="modal-oa__footer">
+                    <label for="modal-oa__input-2" class="modal-oa__close-in-button">Закрыть</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
